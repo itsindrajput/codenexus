@@ -1,0 +1,62 @@
+import React from "react";
+import styles from "./Header.module.css";
+import Card from "./Card";
+
+import image1 from "../assets/courses.png";
+import image2 from "../assets/student.png";
+import image3 from "../assets/doubt_img.png";
+import image4 from "../assets/projects.png";
+
+const cardsData = [
+  {
+    image: image1,
+    title: "4",
+    description: "Courses",
+  },
+  {
+    image: image2,
+    title: "5K+",
+    description: "Learners",
+  },
+  {
+    image: image3,
+    title: "20K+",
+    description: "Doubts Solved",
+  },
+  {
+    image: image4,
+    title: "20+",
+    description: "Student Projects",
+  },
+];
+
+const Header = () => {
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.heading}>
+        <span className={styles.expert}>Expert Faculty </span>{" "}
+        <span className={styles.with_over}>with Over </span>
+        <span className={styles.years}>15 Years </span>{" "}
+        <span className={styles.excellence}>of Proven Excellence!</span>
+      </h1>
+
+      <p className={styles.alert}>
+        🚨 This course is exclusively for foreign students.
+      </p>
+
+      <div className={styles.section_two}>
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            image={card.image}
+            title={card.title}
+            description={card.description}
+            index={index}
+          />
+        ))}
+      </div>
+    </header>
+  );
+};
+
+export default Header;

@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.courses {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.courses h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.courseItem {
+  margin-bottom: 20px;
+}
+
+.courseItem h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.courseCategories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courseCategories p {
+  font-size: 16px;
+  margin: 0;
+}
