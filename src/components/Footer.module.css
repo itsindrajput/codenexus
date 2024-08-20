@@ -1,25 +1,113 @@
 .footer {
   background-color: #333;
-  color: white;
-  padding: 20px;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.footer a {
-  color: white;
-  text-decoration: none;
+.footerContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
 }
 
-.socialMedia {
-  list-style-type: none;
-  padding: 0;
+.logoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.socialMedia li {
-  display: inline;
-  margin: 0 10px;
+.footerLogo {
+  height: 80px;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footerLogo:hover {
+  transform: scale(1.1);
+}
+
+.contactSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactSection h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.contactSection p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactSection a {
+  color: #ffd700;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contactSection a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.addressSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #444;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.addressSection:hover {
+  background-color: #555;
+}
+
+.addressSection h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.addressSection p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.footerBottom {
+  font-size: 1em;
+  margin-top: 20px;
+  color: #ffd700;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footerRow {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

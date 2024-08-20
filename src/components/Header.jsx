@@ -15,12 +15,12 @@ const cardsData = [
   },
   {
     image: image2,
-    title: "5K+",
+    title: "10K+",
     description: "Learners",
   },
   {
     image: image3,
-    title: "20K+",
+    title: "30K+",
     description: "Doubts Solved",
   },
   {
@@ -36,7 +36,7 @@ const Header = () => {
       <h1 className={styles.heading}>
         <span className={styles.expert}>Expert Faculty </span>{" "}
         <span className={styles.with_over}>with Over </span>
-        <span className={styles.years}>15 Years </span>{" "}
+        <span className={styles.years}>20 Years </span>{" "}
         <span className={styles.excellence}>of Proven Excellence!</span>
       </h1>
 
