@@ -36,12 +36,6 @@ const Testimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -54,21 +48,21 @@ const Testimonial = () => {
     <div className={styles.container}>
       <h2>What Our Students Say</h2>
       <div className={styles.slideshow}>
-        <button onClick={prevSlide} className={styles.prev}>
-          &#10094;
-        </button>
-        <div className={styles.slide}>
-          <img
-            src={testimonials[currentIndex].image}
-            alt={testimonials[currentIndex].name}
-            className={styles.image}
-          />
-          <p className={styles.quote}>"{testimonials[currentIndex].quote}"</p>
-          <p className={styles.name}>- {testimonials[currentIndex].name}</p>
+        <div className={styles.slides}>
+          {testimonials
+            .slice(currentIndex, currentIndex + 3)
+            .map((testimonial, index) => (
+              <div key={index} className={styles.slide}>
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className={styles.image}
+                />
+                <p className={styles.quote}>"{testimonial.quote}"</p>
+                <p className={styles.name}>- {testimonial.name}</p>
+              </div>
+            ))}
         </div>
-        <button onClick={nextSlide} className={styles.next}>
-          &#10095;
-        </button>
       </div>
     </div>
   );

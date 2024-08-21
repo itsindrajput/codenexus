@@ -1,15 +1,15 @@
 .container {
-  display: flex;
   gap: 50px;
-  padding: 40px 20px;
-  max-width: 1300px;
+  padding: 4% 5%;
+  padding-bottom: 3%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1fr 0.55fr;
 }
 
-.whyChooseUs,
-.availableCourses {
+.whyChooseUs {
   flex: 1;
-  padding: 15px 30px;
+  padding: 15px;
   background-color: #f8f8f2;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,8 @@
   font-weight: bold;
 }
 
-.points {
+.points,
+.points_for {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -38,6 +39,20 @@
   border-radius: 10px;
   background-color: #ffffff;
   border-left: 3px solid #ff6347;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.points_for li {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border-left: 3px solid #08ab2b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -95,12 +110,13 @@
 }
 
 /* Container for the available courses */
-.availableCourses {
-  padding: 60px 40px;
+.availableCourses,
+.course_whatsapp {
+  padding: 15px 30px;
   background-color: #f8f8f2;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .heading {
@@ -110,58 +126,37 @@
   margin-bottom: 30px;
 }
 
-.courses {
+.whatsappSection {
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Individual course card */
-.course {
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px dashed #f8c2b9;
-  border-radius: 12px;
-  text-align: center;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.course h3 {
-  font-size: 1.6em;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.course p {
-  font-size: 1.1em;
-  color: #666;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .whatsappLink {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  font-size: 1em;
-  color: #25d366;
   text-decoration: none;
-  font-weight: 600;
+  color: #0ba443;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.whatsappLink:hover {
+  transform: scale(1.05);
 }
 
 .whatsappIcon {
   width: 24px;
   height: 24px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .demoButton {
+  text-decoration: none;
   display: block;
   margin: 40px auto 0;
   padding: 12px 25px;

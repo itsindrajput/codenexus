@@ -12,8 +12,8 @@ const App = () => {
       <Navbar></Navbar>
       <CoursesSection></CoursesSection>
       <Testimonial></Testimonial>
-      <EnquiryForm></EnquiryForm>
       <Header></Header>
+      <EnquiryForm></EnquiryForm>
       <Footer></Footer>
     </>
   );

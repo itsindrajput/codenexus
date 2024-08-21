@@ -1,19 +1,22 @@
 import React from "react";
 import styles from "./CoursesSection.module.css";
-import whatsappIcon from "../assets/whatsapp.png";
+import Courses from "./Courses";
+import whatsapp_icon from "../assets/whatsapp.png";
 
 const CoursesSection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.whyChooseUs}>
-        <h2 className={styles.heading}>Why Choose Our Courses?</h2>
+        <h2 className={styles.heading}>Why Choose Us?</h2>
         <ul className={styles.points}>
           <li>🎓 Over 20+ Years of Expertise</li>
           <li>👨‍🎓 Trained 10,000+ Students</li>
+          <li>👨 Trained Students are from Abroad as well</li>
           <li>🌍 Dedicated to International Students</li>
           <li>📚 Experienced Faculty from Academia & Industry</li>
           <li>⏰ 24/7 Training Availability</li>
           <li>🎥 Book a Demo and Get Started</li>
+
           <li className={styles.learning_path}>
             <div className={styles.batch_label}>
               🧑‍🏫 Personalize Your Batch Size:
@@ -26,79 +29,47 @@ const CoursesSection = () => {
           </li>
         </ul>
       </div>
+
       <div className={styles.availableCourses}>
         <h2 className={styles.heading}>Available Courses</h2>
-        <div className={styles.courses}>
-          <div className={styles.course}>
-            <h3>Full Stack Java Development</h3>
-            <p>For Beginners & Experienced Professionals</p>
+        <Courses></Courses>
+        <button className={styles.demoButton}>Book a Demo Session</button>
+      </div>
+
+      <div className={styles.whyChooseUs}>
+        <h2 className={styles.heading}>Get Started</h2>
+        <ul className={styles.points_for}>
+          <li>Join the course by sharing the details below on WhatsApp</li>
+          <li>🎓 Full Name</li>
+          <li>📞 Contact Number</li>
+          <li>📋 Course Name</li>
+          <li>📅 Preferred Batch Size</li>
+          <li>🕒 Desired Timings</li>
+        </ul>
+
+        <div className={styles.whatsappSection}>
+          <div>
             <a
-              href="https://wa.me/1234567890?text=I'm interested in the Java Full Stack course."
+              href="https://wa.me/yourwhatsappnumber"
               className={styles.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <img
-                src={whatsappIcon}
-                alt="Chat on WhatsApp"
+                src={whatsapp_icon}
+                alt="WhatsApp"
                 className={styles.whatsappIcon}
               />
-              Chat on WhatsApp
+              +1234567890
             </a>
           </div>
-          <div className={styles.course}>
-            <h3>Data Structures & Algorithms</h3>
-            <p>For Beginners & College Curriculum</p>
+          <div>
             <a
-              href="https://wa.me/1234567890?text=I'm interested in the Data Structures & Algorithms course."
-              className={styles.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://wa.me/yourwhatsappnumber?text=I'm interested in the course"
+              className={styles.demoButton}
             >
-              <img
-                src={whatsappIcon}
-                alt="Chat on WhatsApp"
-                className={styles.whatsappIcon}
-              />
-              Chat on WhatsApp
-            </a>
-          </div>
-          <div className={styles.course}>
-            <h3>Full Stack Web Development</h3>
-            <p>For Beginners & Experienced Professionals</p>
-            <a
-              href="https://wa.me/1234567890?text=I'm interested in the Machine Learning course."
-              className={styles.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={whatsappIcon}
-                alt="Chat on WhatsApp"
-                className={styles.whatsappIcon}
-              />
-              Chat on WhatsApp
-            </a>
-          </div>
-          <div className={styles.course}>
-            <h3>Python for Data Science</h3>
-            <p>For Beginners & Experienced Professionals</p>
-            <a
-              href="https://wa.me/1234567890?text=I'm interested in the Python for Data Science course."
-              className={styles.whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={whatsappIcon}
-                alt="Chat on WhatsApp"
-                className={styles.whatsappIcon}
-              />
-              Chat on WhatsApp
+              Register Now
             </a>
           </div>
         </div>
-        <button className={styles.demoButton}>Book a Demo Session</button>
       </div>
     </div>
   );
