@@ -27,7 +27,7 @@
 }
 
 .slide {
-  min-width: 33.33%;
+  width: 100%;
   box-sizing: border-box;
   padding: 20px;
   margin: 0 10px;
@@ -57,6 +57,7 @@
   color: #555;
   font-size: 1.1em;
   line-height: 1.5;
+  text-wrap: balance;
 }
 
 .name {

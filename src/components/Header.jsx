@@ -4,29 +4,29 @@ import Card from "./Card";
 
 import image1 from "../assets/courses.png";
 import image2 from "../assets/student.png";
-import image3 from "../assets/doubt_img.png";
-import image4 from "../assets/projects.png";
+import image3 from "../assets/placement.png";
+import image4 from "../assets/certification.png";
 
 const cardsData = [
   {
     image: image1,
-    title: "4",
-    description: "Courses",
+    title: "Personalized",
+    description: "Learning",
   },
   {
     image: image2,
-    title: "10K+",
-    description: "Learners",
+    title: "International ",
+    description: "Community",
   },
   {
     image: image3,
-    title: "30K+",
-    description: "Doubts Solved",
+    title: "Placement ",
+    description: "Support",
   },
   {
     image: image4,
-    title: "20+",
-    description: "Student Projects",
+    title: "Certification",
+    description: "Projects",
   },
 ];
 
