@@ -12,8 +12,8 @@ const CoursesSection = () => {
           <li>🎓 Over 20+ Years of Expertise</li>
           <li>👨‍🎓 Trained 10,000+ Students</li>
           <li>👨 Trained Students are from Abroad as well</li>
-          <li>🌍 Dedicated to International Students</li>
-          <li>📚 Experienced Faculty from Academia & Industry</li>
+          <li>🔄 Interactive & Hands-On Learning</li>
+          <li>🥇 Experienced Faculty from Academia & Industry</li>
           <li>⏰ 24/7 Training Availability</li>
           <li>🎥 Book a Demo and Get Started</li>
 
@@ -38,17 +38,13 @@ const CoursesSection = () => {
 
       <div className={styles.whyChooseUs}>
         <h2 className={styles.heading}>Get Started</h2>
-        <ul className={styles.points_for}>
-          <li>Join the course by sharing the details below on WhatsApp</li>
-          <li>🎓 Full Name</li>
-          <li>📞 Contact Number</li>
-          <li>📋 Course Name</li>
-          <li>📅 Preferred Batch Size</li>
-          <li>🕒 Desired Timings</li>
-        </ul>
-
-        <div className={styles.whatsappSection}>
-          <div>
+        <div className={styles.whatsappAndTxt}>
+          <p className={styles.instruction}>
+            {" "}
+            To take the course, WhatsApp the details below to{" "}
+            <span>+91 8456781221</span>
+          </p>
+          <div className={styles.whatsappContainer}>
             <a
               href="https://wa.me/yourwhatsappnumber"
               className={styles.whatsappLink}
@@ -58,18 +54,23 @@ const CoursesSection = () => {
                 alt="WhatsApp"
                 className={styles.whatsappIcon}
               />
-              +1234567890
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://wa.me/yourwhatsappnumber?text=I'm interested in the course"
-              className={styles.demoButton}
-            >
-              Register Now
             </a>
           </div>
         </div>
+        <ul className={styles.points_for}>
+          <li>🎓 Full Name</li>
+          <li>📞 Contact Number</li>
+          <li>📋 Course Name</li>
+          <li className={styles.batchSize}>
+            📅 Preferred Batch Size
+            <div className={styles.dots}>
+              <span className={styles.dot}> 1</span>
+              <span className={styles.dot}> 5</span>
+              <span className={styles.dot}>10</span>
+            </div>
+          </li>
+          <li>🕒 Desired Timings</li>
+        </ul>
       </div>
     </div>
   );

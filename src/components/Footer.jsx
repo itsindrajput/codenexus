@@ -33,11 +33,14 @@ const Footer = () => {
           </div>
           <div className={styles.addressSection}>
             <h3>Our Address</h3>
-            <p>🌍 123 Learning Lane, Education City, EC 12345</p>
+            <p>
+              🌍 We operate exclusively online, with no physical office
+              presence.
+            </p>
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>© 2024 Code Nexus. All rights reserved.</p>
+          <p>© 2024 Course Maa. All rights reserved.</p>
         </div>
       </div>
     </footer>

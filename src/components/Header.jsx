@@ -41,7 +41,7 @@ const Header = () => {
       </h1>
 
       <p className={styles.alert}>
-        🚨 This course is exclusively for foreign students.
+        Flexible Learning Schedule and Cutting-Edge Curriculum
       </p>
 
       <div className={styles.section_two}>
