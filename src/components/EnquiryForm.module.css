@@ -6,7 +6,7 @@
   padding: 20px 40px 30px 40px;
   background-color: #fbfff0;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .heading {
@@ -74,19 +74,19 @@
 .button {
   text-decoration: none;
   display: block;
-  margin: 0px auto 0;
-  padding: 10px 30px;
+  margin: 0 auto;
+  padding: 12px 36px;
   font-size: 1.2em;
-  color: #ffd700;
+  color: #fff;
   background-color: #333;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #3f3b3b;
-  color: #ffc107;
-  transform: scale(1.03);
+  background-color: #1a1a1a;
+  color: #ff8e00;
+  transform: scale(1.05);
 }
