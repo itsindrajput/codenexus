@@ -23,7 +23,9 @@
   gap: 40px;
   margin-bottom: 30px;
 }
-
+.logofortab {
+  display: none;
+}
 .logoSection {
   display: flex;
   justify-content: center;
@@ -110,13 +112,36 @@
 }
 
 @media (max-width: 768px) {
-  .footerRow {
+  .footer {
+    padding: 25px 20px;
+  }
+  .footerContent {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .logofortab {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .logoSection {
+    display: none;
   }
 
-  .contactSection p {
+  .footerRow {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .contactSection {
+    flex: 1;
+    display: flex;
     flex-direction: column;
+    align-items: baseline;
+  }
+  .contactSection p {
+    flex-direction: row;
     gap: 10px;
   }
 
@@ -134,5 +159,11 @@
 
   .addressSection p {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footerLogo {
+    height: 55px;
   }
 }

@@ -9,6 +9,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
+        <div className={styles.logofortab}>
+          <img src={logo} alt="Code Nexus Logo" className={styles.footerLogo} />
+        </div>
         <div className={styles.footerRow}>
           <div className={styles.logoSection}>
             <img

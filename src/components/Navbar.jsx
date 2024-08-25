@@ -20,7 +20,7 @@ const Navbar = ({ scrollToSection }) => {
         </button>
       </div>
       <ul className={`${styles.navList} ${isOpen ? styles.active : ""}`}>
-        <li>
+        <li className={styles.home_special}>
           <button
             onClick={() => {
               scrollToSection("home");

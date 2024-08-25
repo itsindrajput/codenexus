@@ -46,11 +46,14 @@
 }
 
 /* Media Query for Medium to Large Screens */
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media only screen and (min-width: 800px) and (max-width: 1450px) {
   .card {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .card_content {
+    padding-left: 0px;
   }
   .card_separator {
     display: none;
