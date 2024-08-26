@@ -54,6 +54,8 @@ const Header = () => {
             index={index}
           />
         ))}
+        <div className={styles.horizontalLine}></div>
+        <div className={styles.verticalLine}></div>
       </div>
     </header>
   );

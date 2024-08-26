@@ -8,6 +8,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: #f7f8f1;
   border-radius: 10px;
+  cursor: context-menu;
 }
 .container h2 {
   font-size: 2em;

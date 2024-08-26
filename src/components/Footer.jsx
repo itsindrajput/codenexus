@@ -37,8 +37,8 @@ const Footer = () => {
           <div className={styles.addressSection}>
             <h3>Our Address</h3>
             <p>
-              🌍 We operate exclusively online, with no physical office
-              presence.
+              🌍 We operate exclusively online{" "}
+              <span> with no physical office presence.</span>
             </p>
           </div>
         </div>
