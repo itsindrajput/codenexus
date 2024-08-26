@@ -81,7 +81,6 @@ const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    // If the currentIndex plus 3 (for the 3 testimonials shown) reaches the end of the array, start from the beginning
     setCurrentIndex((prevIndex) =>
       prevIndex + 3 >= testimonials.length ? 0 : prevIndex + 1
     );
@@ -113,7 +112,7 @@ const Testimonial = () => {
                 <p className={styles.name}>- {testimonial.name}</p>
               </div>
             ))}
-          {/* Handle wrapping around to the start of the testimonials array */}
+
           {currentIndex + 3 > testimonials.length &&
             testimonials
               .slice(0, (currentIndex + 3) % testimonials.length)

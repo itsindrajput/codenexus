@@ -6,9 +6,10 @@
   border-top: 3px solid #ddd;
   border-bottom: 3px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #f7f8f1;
+  background-color: #f8f8f2;
   border-radius: 10px;
   cursor: context-menu;
+  text-wrap: balance;
 }
 .container h2 {
   font-size: 2em;
@@ -76,33 +77,101 @@
     padding-top: 30px;
     padding-bottom: 20px;
   }
+  .slideshow {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .slide {
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+    margin-right: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* Media Query for Mobile View */
 @media only screen and (max-width: 500px) {
   .container {
     text-align: center;
-    margin: 40px 10px;
-    margin-top: 20px;
+    margin: 20px 10px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
   .container h2 {
     font-size: 1.8em;
-    text-wrap: balance;
     font-weight: 700;
     color: #333;
     margin-bottom: 20px;
   }
+  .slideshow {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
   .slide {
-    width: 400px;
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+    width: 90%;
+    max-width: 350px;
+    margin: 0 10px;
     box-sizing: border-box;
     padding: 20px;
-    margin: 0 10px;
     background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    opacity: 0.95;
+    transition: opacity 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .slide:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    opacity: 0.9;
-    transition: opacity 0.5s ease, transform 0.3s ease;
+  }
+
+  .quote {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
   }
 }
