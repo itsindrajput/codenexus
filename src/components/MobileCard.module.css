@@ -1,0 +1,94 @@
+.card {
+  background-color: #f8f8f2;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.textBlock {
+  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #ecd486 0%, #f4b7a6 100%);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.highlightedText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.whatsappSection {
+  background: #ffffff;
+  padding: 15px 0px 5px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.instruction {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.whatsapp {
+  font-size: 16px;
+  font-weight: 700;
+  color: #25d366;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 5px;
+}
+
+.whatsappIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-bottom: 7px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.details {
+  background-color: #ffffff;
+  padding: 5px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.details p {
+  font-size: 16px;
+  color: #525356;
+  margin: 8px 0;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.batchSize {
+  display: inline-block;
+  background-color: #f1f8f1;
+  color: #333;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
