@@ -7,8 +7,9 @@ const MobileCard = () => {
     <div className={styles.card}>
       <div className={styles.textBlock}>
         <p className={styles.highlightedText}>
-          Experience over 20+ years of online education excellence, serving
-          students globally, including those from abroad.
+          After 20 years of offline teaching, we’re now offering the same
+          top-notch education on our online platform, serving students from all
+          corners of the world.
         </p>
       </div>
       <div className={styles.whatsappSection}>

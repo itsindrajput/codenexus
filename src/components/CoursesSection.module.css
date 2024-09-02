@@ -7,6 +7,10 @@
   grid-template-columns: 0.95fr 1fr 0.55fr;
 }
 
+.available_Courses_mobo {
+  display: none;
+}
+
 .whyChooseUs {
   flex: 1;
   padding: 15px;
@@ -227,6 +231,12 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .available_Courses_mobo {
+    display: block;
+  }
+  .available_Courses_desk {
+    display: none;
+  }
   .whatsappIcon {
     width: 40px;
     height: 40px;
@@ -276,6 +286,12 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .available_Courses_mobo {
+    display: block;
+  }
+  .available_Courses_desk {
+    display: none;
   }
   .heading {
     font-size: 1.8em;

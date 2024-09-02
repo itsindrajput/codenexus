@@ -13,6 +13,15 @@ const CoursesSection = () => {
       {/* Conditionally render MobileCard only for mobile view */}
       {isMobile && <MobileCard />}
 
+      {/* available_Courses_mobo render only for mobile view */}
+      <div className={styles.available_Courses_mobo}>
+        <div className={styles.availableCourses}>
+          <h2 className={styles.heading}>Available Courses</h2>
+          <Courses />
+          <button className={styles.demoButton}>Book a Demo Session</button>
+        </div>
+      </div>
+
       <div className={styles.whyChooseUs}>
         <h2 className={styles.heading}>Why Choose Us?</h2>
         <ul className={styles.points}>
@@ -36,10 +45,13 @@ const CoursesSection = () => {
         </ul>
       </div>
 
-      <div className={styles.availableCourses}>
-        <h2 className={styles.heading}>Available Courses</h2>
-        <Courses />
-        <button className={styles.demoButton}>Book a Demo Session</button>
+      {/* available_Courses_desk render only for desktop view */}
+      <div className={styles.available_Courses_desk}>
+        <div className={styles.availableCourses}>
+          <h2 className={styles.heading}>Available Courses</h2>
+          <Courses />
+          <button className={styles.demoButton}>Book a Demo Session</button>
+        </div>
       </div>
 
       {/* Conditionally render the "Get Started" section only for larger screens */}
