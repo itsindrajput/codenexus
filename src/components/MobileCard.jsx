@@ -7,14 +7,13 @@ const MobileCard = () => {
     <div className={styles.card}>
       <div className={styles.textBlock}>
         <p className={styles.highlightedText}>
-          After 20 years of offline teaching, we’re now offering the same
-          top-notch education on our online platform, serving students from all
-          corners of the world.
+          20+ years of expertise and over 10k students trained, including those
+          from abroad, in a variety of software courses.
         </p>
       </div>
       <div className={styles.whatsappSection}>
         <p className={styles.instruction}>
-          To take the course,
+          To take the online course,
           <span className={styles.whatsapp}>
             <img
               src={whatsappIcon}
@@ -23,7 +22,7 @@ const MobileCard = () => {
             />
             WhatsApp
           </span>
-          the details below to +91 8456781221.
+          the below details at +91 8456781221.
         </p>
       </div>
       <div className={styles.details}>
@@ -46,6 +45,9 @@ const MobileCard = () => {
         </p>
         <p>
           🕒 <span>Desired Timings</span>
+        </p>
+        <p>
+          ⬇️ <span>See below for the available courses.</span>
         </p>
       </div>
     </div>
